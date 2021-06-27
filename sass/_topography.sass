@@ -1,0 +1,48 @@
+$red: #B80008
+$grayLight: #86878648
+$gray: #808080
+$redLight: #DA0009
+$white: #FFFFFF
+
+.link
+    font-size: 1.6rem
+    font-weight: 500
+    text-decoration: none
+    color: $gray
+
+    &:hover
+        color: $redLight
+        transition: color 0.2s
+
+.subTitle
+    color: $redLight
+    text-transform: uppercase
+    font-size: 1.3rem
+    line-height: 1.5
+    font-weight: 600
+    padding-top: 10px
+
+.subTitleSpan
+    display: inline-block
+
+.headingOne
+    font-size: 3.5rem
+    text-transform: uppercase
+    color: $gray
+    font-weight: 200
+
+.headingOneSpan
+    display: inline-block
+
+@media screen and ( min-width: 768px )
+    .headingOne
+        font-size: 4.5rem
+
+@media screen and ( min-width: 992px )
+    .headingOne
+        font-size: 6rem
+        max-width: 900px
+
+    .subTitle
+        margin-bottom: 50px
+        font-size: 1.6rem
