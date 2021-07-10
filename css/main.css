@@ -52,6 +52,26 @@
   display: inline-block;
 }
 
+.button {
+  padding: 15px 30px;
+  background-color: #DA0009;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  margin: 20px 0px;
+}
+
+.spanRed {
+  color: #DA0009;
+}
+
+.icon {
+  padding-right: 25px;
+}
+
 @media screen and (min-width: 768px) {
   .headingOne {
     font-size: 4.5rem;
@@ -82,10 +102,6 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
-  height: 10000px;
 }
 
 html {
@@ -199,7 +215,7 @@ html {
 .navigation__line {
   width: 20px;
   height: 2px;
-  background: #B80008;
+  background: #DA0009;
 }
 
 .navigation__line:nth-child(2) {
@@ -215,7 +231,7 @@ html {
   top: 0;
   left: 100%;
   width: 1px;
-  height: 1000vh;
+  height: 100%;
   background-color: #86878648;
 }
 
@@ -256,6 +272,9 @@ html {
   width: 100%;
   height: 100%;
   padding: 0px 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .header__background {
@@ -316,7 +335,7 @@ html {
   width: 7.5px;
   height: 30px;
   background-color: #DA0009;
-  bottom: 6.5%;
+  bottom: 7.2%;
   right: 75%;
   z-index: 100;
 }
@@ -330,7 +349,7 @@ html {
 .solutions__bottomLineTop {
   position: absolute;
   width: 1px;
-  height: 10%;
+  height: 20%;
   background-color: #86878648;
   top: -75px;
   right: 75%;
@@ -343,6 +362,8 @@ html {
 
 .solutions__image {
   width: 100%;
+  position: relative;
+  z-index: 1000;
 }
 
 .solutions__imageArticle {
@@ -414,6 +435,112 @@ html {
   z-index: 100;
 }
 
+.aboutUs {
+  position: relative;
+  width: 100vw;
+  padding: 75px 0px 75px 30px;
+}
+
+.aboutUs__imageArticle {
+  width: 100%;
+}
+
+.aboutUs__image {
+  position: relative;
+  width: 100%;
+  z-index: 100;
+}
+
+.aboutUs__textArticle {
+  padding-right: 30px;
+}
+
+.aboutUs__headingTwo {
+  margin-top: 20px;
+}
+
+.aboutUs__paragraph {
+  display: none;
+  z-index: 1000;
+}
+
+.contact {
+  width: 100vw;
+  padding: 50px 0px;
+  background-image: url(/image/footerImage.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 75px;
+}
+
+.contact__article {
+  padding: 0 30px;
+}
+
+.contact__paragraph {
+  font-size: 2.4rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #808080;
+}
+
+.contactInfo {
+  position: relative;
+  width: 100vw;
+  padding: 75px 30px;
+  position: relative;
+  padding: 50px 30px;
+}
+
+.contactInfo__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contactInfo__box {
+  width: 50%;
+}
+
+.contactInfo__box100 {
+  width: 100%;
+  text-align: center;
+  padding: 10px 30px;
+  border: 2px solid #86878648;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.contactInfo__iconBox {
+  width: 100%;
+  margin-top: 20px;
+  color: #808080;
+  font-size: 2rem;
+}
+
+.contactInfo__topLine {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #86878648;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.footer {
+  position: relative;
+  width: 100vw;
+  padding: 75px 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #86878648;
+  padding: 50px 30px;
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     height: 80px;
@@ -453,7 +580,7 @@ html {
     display: block;
   }
   .solutions__bottomLineTop {
-    height: 200%;
+    height: 120%;
   }
   .products {
     padding: 75px 10%;
@@ -482,6 +609,61 @@ html {
     width: 100%;
     height: 100%;
     font-size: 2.8rem;
+  }
+  .aboutUs {
+    padding: 75px 0px 75px 10%;
+  }
+  .aboutUs__textArticle {
+    padding-right: 10%;
+  }
+  .aboutUs__headingTwo {
+    margin-top: 40px;
+  }
+  .contact {
+    padding: 75px 10%;
+  }
+  .contact__article {
+    padding: 0px;
+  }
+  .contact__paragraph {
+    font-size: 3.2rem;
+  }
+  .contactInfo {
+    padding: 50px 10%;
+  }
+  .contactInfo__article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .contactInfo__box {
+    width: 25%;
+  }
+  .contactInfo__box100 {
+    width: 50%;
+    margin-top: 0px;
+  }
+  .contactInfo__iconBox {
+    width: 50%;
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -550,6 +732,9 @@ html {
   .header__video {
     height: calc(100vh - 100px);
   }
+  .header__bottomLineTopRed {
+    bottom: 12%;
+  }
   .solutions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -612,6 +797,8 @@ html {
             justify-content: space-between;
   }
   .products__productBox {
+    -webkit-transform-origin: top;
+            transform-origin: top;
     width: 30%;
     min-height: 400px;
     -webkit-transition: -webkit-transform 0.5s;
@@ -634,6 +821,61 @@ html {
   .products__productBox:hover {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
+  }
+  .aboutUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 120px 0px 120px 15%;
+  }
+  .aboutUs__imageArticle {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .aboutUs__textArticle {
+    padding-right: 5%;
+    width: 40%;
+  }
+  .aboutUs__headingTwo {
+    margin-top: 0px;
+  }
+  .aboutUs__paragraph {
+    display: block;
+    font-size: 4rem;
+    color: #808080;
+    text-transform: uppercase;
+    font-weight: 200;
+    width: 460px;
+    padding: 20px;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    background-color: #FFFFFF;
+  }
+  .contact {
+    width: 70vw;
+    margin: 120px 15% 120px 15%;
+    padding: 50px 10%;
+  }
+  .contact__paragraph {
+    font-size: 5rem;
+  }
+  .contactInfo {
+    padding: 120px 15%;
+    padding: 60px 15%;
+  }
+  .contactInfo__topLine {
+    width: 80%;
+  }
+  .contactInfo__iconBox {
+    font-size: 2.5rem;
+  }
+  .footer {
+    padding: 60px 15%;
   }
 }
 

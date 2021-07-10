@@ -47,6 +47,9 @@
         &__video
             height: calc(100vh - 100px)
 
+        &__bottomLineTopRed
+            bottom: 12%
+
     .solutions
         display: flex
         @include paddingLargeSection
@@ -84,6 +87,7 @@
             justify-content: space-between
 
         &__productBox
+            transform-origin: top
             width: 30%
             min-height: 400px
             transition: transform 0.5s
@@ -101,3 +105,55 @@
 
         &__productBox:hover
             transform: scale(0.9)
+
+    .aboutUs
+        display: flex
+        padding: 120px 0px 120px 15% 
+
+        &__imageArticle
+            position: relative
+            width: 60%
+            height: 100%
+            order: 2
+
+        &__textArticle
+            padding-right: 5%
+            width: 40%
+
+        &__headingTwo
+            margin-top: 0px
+
+        &__paragraph
+            display: block
+            font-size: 4rem
+            color: $gray
+            text-transform: uppercase
+            font-weight: 200
+            width: 460px
+            padding: 20px
+            position: absolute
+            top: 75%
+            left: 10%
+            background-color: $white
+
+    .contact
+        width: 70vw
+        margin: 120px 15% 120px 15%
+        padding: 50px 10%
+
+
+        &__paragraph
+            font-size: 5rem
+
+    .contactInfo
+        @include paddingLargeSection
+        padding: 60px 15%
+
+        &__topLine
+            width: 80%
+
+        &__iconBox
+            font-size: 2.5rem
+
+    .footer
+        padding: 60px 15%
