@@ -72,6 +72,11 @@
   padding-right: 25px;
 }
 
+.transformScale {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
 @media screen and (min-width: 768px) {
   .headingOne {
     font-size: 4.5rem;
@@ -407,6 +412,7 @@ html {
   background-color: #F6F6F6;
   overflow: hidden;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .products__image {

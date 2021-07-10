@@ -101,7 +101,7 @@ if(window.innerWidth <= 760) {
 
   gsap.from(".products__bottomLine", {scaleX: 0, transformOrigin: "right", ease: 'easeInOut', duration: 2, scrollTrigger: {
   trigger: ".js-scrollTriggerProductBottomLine",
-  start: 'top 40%',
+  start: 'top 30%',
   }});  
 
   gsap.from(".contactInfo__topLine--first", {scaleX: 0, transformOrigin: "right", ease: 'easeInOut', duration: 2, scrollTrigger: {
